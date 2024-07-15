@@ -1,0 +1,11 @@
+#ocultar carpetas en el navegador
+RewriteEngine ON
+
+#ocultar
+Options ALL -Indexes
+
+
+#Urls amigables
+RewriteRule ^([a-zA-Z0-9/_-ñÑ]+)$ index.php?url=$1
+
+
